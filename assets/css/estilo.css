@@ -192,7 +192,7 @@ h1, a, small, input, p {
 }
 
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
 
     html{
         overflow:auto;
