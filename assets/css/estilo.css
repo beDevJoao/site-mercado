@@ -221,6 +221,9 @@ h1, a, small, input, p {
     .item-avaliacao{
         max-width:200px;
     }
+    .footer-info p{
+        padding-left:20px;
+    }
     .back-to-top {
         display:none;
     }
