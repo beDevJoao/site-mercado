@@ -110,7 +110,9 @@ h1, a, small, input, p {
     display:flex;
     justify-content: space-between;
     flex: 0 1 200px;
-    margin: 15px 15px;
+}
+.header-login:last-child{
+    margin-left:30px;
 }
 .header-login a {
     margin: 0px 10px;
@@ -131,14 +133,17 @@ h1, a, small, input, p {
 .menu-bg {
     background:rgb(8, 110, 145);
     margin-top:-16px;
+    
 }
 .navegar  {
     max-width: 800px;
     flex:1 1 300px;
     margin: 10px auto;  
+    
 }
 
 .navegar ul {
+    padding: 10px;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -186,6 +191,40 @@ h1, a, small, input, p {
     color:rgb(8, 110, 145);
 }
 
+
+@media screen and (max-width: 800px){
+
+    html{
+        overflow:auto;
+    }
+    .header-bg, 
+    .menu-bg, 
+    #carrosel, 
+    #about-bg, 
+    #footer-bg {
+        width:100vw;
+        margin-left:20px;
+    }
+    #avaliacao-bg{
+        margin-left:20px;
+    }
+    .carrosel, #carousel {
+        overflow:auto;
+    }
+    #carrosel .slick-prev:before, 
+    #carrosel .slick-next:before{
+        display:none;
+    }
+    .avaliacao{
+        width:70%;
+    }
+    .item-avaliacao{
+        max-width:200px;
+    }
+    .back-to-top {
+        display:none;
+    }
+}
 /* FOOTER */  
 
 #avaliacao-bg {
@@ -203,6 +242,7 @@ h1, a, small, input, p {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.644), 0 0 5px rgba(0, 0, 0, 0.644);
 }
 .item-avaliacao{
+    max-width:250px;
     flex: 1 1 200px;
     margin: 15px 15px;
     padding:2px;
@@ -271,7 +311,6 @@ h1, a, small, input, p {
 #footer-bg{
     background:rgba(189, 189, 189, 0.226);
     margin-top:-20px;
-    height:99px;
 }
 .footer-info{
     display:flex;
@@ -287,7 +326,7 @@ h1, a, small, input, p {
     margin: 15px 0;
 }
 
-/* botao voltar ao topo */ 
+/* botao voltar ao topo  */
 
 .back-to-top {
   background-color: #006E6E;
@@ -309,3 +348,5 @@ h1, a, small, input, p {
     justify-content: center;
     padding-top: 10px;
   }
+
+  
